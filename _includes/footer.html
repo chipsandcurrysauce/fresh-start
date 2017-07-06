@@ -1,46 +1,22 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
+<div class="footer-links">
+  <ul>
+    <li><h3>Content</h3></li>
+    <li><a href="javascript:void(0)">About</a></li>
+    <li><a href="javascript:void(0)">Contact</a></li>
+    <li><a href="javascript:void(0)">Products</a></li>
+  </ul>
+  <ul>
+    <li><h3>Follow Us</h3></li>
+    <li><a href="javascript:void(0)">Facebook</a></li>
+    <li><a href="javascript:void(0)">Twitter</a></li>
+    <li><a href="javascript:void(0)">YouTube</a></li>
+  </ul>
+  <ul>
+    <li><h3>Legal</h3></li>
+    <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+    <li><a href="javascript:void(0)">Privacy Policy</a></li>
+     <li></li>
+  </ul>
+</div>
+<hr>
+<p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</p>
